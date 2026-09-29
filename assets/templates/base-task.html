@@ -1,0 +1,92 @@
+<template id="tpl-task-base">
+    <section class="task">
+        <div class="task__id" data-id></div>
+        <div class="task__content">
+            <div class="task__titleline">
+                <p data-intro hidden></p>
+                <strong data-title-label></strong>
+                <span data-title></span>
+            </div>
+
+            <figure data-media hidden>
+                <div class="task-media" data-media-wrap>
+                    <button
+                            type="button"
+                            class="task-media__zoom-toggle"
+                            data-media-zoom-toggle
+                            hidden
+                            aria-label="Lupe aktivieren"
+                            aria-pressed="false"
+                            title="Zoom aktivieren"
+                    >
+                        🔍
+                    </button>
+
+                    <img data-image alt="" hidden />
+
+                    <video
+                            data-video
+                            class="js-task-video plyr-video"
+                            playsinline
+                            preload="metadata"
+                            hidden
+                    >
+                        <source data-video-source />
+                        Ihr Browser unterstützt das Video-Element nicht.
+                    </video>
+
+                    <div
+                            class="task-media__zoom-lens"
+                            data-media-zoom-lens
+                            hidden
+                            aria-hidden="true"
+                    ></div>
+
+                    <div class="task-media-overlay" data-media-overlay hidden></div>
+                </div>
+                <figcaption class="muted" data-caption></figcaption>
+            </figure>
+
+            <div class="task__prompt">
+                <div class="task__promptline">
+            <span class="task__promptlead">
+              <span class="task__prompt-icon" data-prompt-icon hidden></span>
+              <strong data-prompt-label></strong>
+            </span>
+                </div>
+
+                <div class="task__prompttext" data-prompt></div>
+                <p data-subtitle hidden></p>
+            </div>
+
+            <!-- Answer wird hier je Typ eingesetzt -->
+            <div data-answer-slot></div>
+
+            <div class="task__actions">
+                <button type="button" class="task__check-button" data-check-button>Prüfen</button>
+                <div class="task__check-feedback" data-check-feedback hidden></div>
+            </div>
+
+            <div class="helps" data-helps hidden>
+                <details class="help" data-help="hint1">
+                    <summary data-icon="💡">Tipp 1</summary>
+                    <div data-help-content></div>
+                </details>
+
+                <details class="help" data-help="hint2">
+                    <summary data-icon="💡">Tipp 2</summary>
+                    <div data-help-content></div>
+                </details>
+
+                <details class="help" data-help="solution">
+                    <summary data-icon="⚠️">Lösung</summary>
+                    <div data-help-content></div>
+                    <figure class="help__media" data-help-media hidden>
+                        <img data-help-image alt="" hidden />
+                        <figcaption class="muted" data-help-caption hidden></figcaption>
+                    </figure>
+                </details>
+            </div>
+        </div>
+    </section>
+</template>
