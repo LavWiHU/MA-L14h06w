@@ -1,0 +1,35 @@
+/*
+ * Zentrale Import-Datei für alle Styles.
+ *
+ * Die Reihenfolge folgt dem Prinzip: von allgemein (Basis/Layout)
+ * zu spezifisch (Komponenten/Antworttypen).
+ *
+ * Dadurch werden grundlegende Styles zuerst definiert und können
+ * von spezialisierteren Komponenten gezielt überschrieben werden.
+ */
+@import "./base/typography.css";
+@import "./base/utilities.css";
+
+@import "./layout/worksheet-cover.css";
+@import "./layout/worksheet.css";
+@import "./layout/chapter.css";
+@import "./layout/task-layout.css";
+
+@import "./ui/attention.css";
+
+@import "./task/task.css";
+@import "./task/task-actions.css";
+@import "./task/task-help.css";
+@import "./task/task-feedback.css";
+
+@import "./media/task-media.css";
+@import "./media/image-zoom.css";
+@import "./media/snap-points.css";
+@import "./media/video-player.css";
+
+@import "./answers/text.css";
+@import "./answers/single-choice.css";
+@import "./answers/multiple-choice.css";
+@import "./answers/cloze-select.css";
+@import "./answers/image-labels.css";
+@import "./answers/match-lines.css";
