@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <title></title>
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.8.4/plyr.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<section class="worksheet-cover" data-worksheet-cover hidden>
+    <div class="worksheet-cover__inner" data-cover-inner >
+        <h1 class="worksheet-cover__title" data-cover-title></h1>
+        <img
+                class="worksheet-cover__image"
+                data-cover-image
+                hidden
+                alt=""
+        >
+
+        <button
+                type="button"
+                class="worksheet-cover__start task__unlock-button"
+                data-cover-start
+                hidden>
+            Start
+        </button>
+    </div>
+</section>
+<main class="worksheet" data-worksheet hidden>
+
+    <h1 data-worksheet-title></h1>
+
+    <section data-chapters></section>
+
+    <div data-template-host hidden></div>
+</main>
+
+<script src="https://cdn.plyr.io/3.8.4/plyr.polyfilled.js"></script>
+<script type="module" src="./assets/js/app/bootstrap.js"></script>
+</body>
+</html>
