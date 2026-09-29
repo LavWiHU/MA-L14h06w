@@ -1,0 +1,66 @@
+{
+  "title": "Die Brennnessel",
+  "cover": {
+    "title": "Die Brennnessel",
+    "imageSrc": "./assets/data/media/Deckblatt.png",
+    "maxWidth": "1100px",
+    "maxHeight": "900px"
+  },
+  "chapters": [
+    {
+      "id": "kapitel-01",
+      "title": "1. Erkennen - Spaziergang in der Natur",
+      "icon": "🌿",
+      "tasksSrc": "./assets/data/chapters/kapitel-01.json",
+      "tasks": [
+        "1.1",
+        "1.2",
+        "1.3"
+      ]
+    },
+    {
+      "id": "kapitel-02",
+      "title": "2. Untersuchung - Die Brennnessel unter der Lupe",
+      "icon": "🔍",
+      "tasksSrc": "./assets/data/chapters/kapitel-02.json",
+      "tasks": [
+        "2.1",
+        "2.2",
+        "2.3"
+      ]
+    },
+    {
+      "id": "kapitel-03",
+      "title": "3. Untersuchung - Ein Brennhaar unter der Lupe",
+      "icon": "🔍",
+      "tasksSrc": "./assets/data/chapters/kapitel-03.json",
+      "tasks": [
+        "3.1",
+        "3.2",
+        "3.3"
+      ]
+    },
+    {
+      "id": "kapitel-04",
+      "title": "4. Vergleichen – Brennnessel und Taubnessel",
+      "icon": "↔\uFE0F",
+      "tasksSrc": "./assets/data/chapters/kapitel-04.json",
+      "tasks": [
+        "4.1",
+        "4.2",
+        "4.3"
+      ]
+    },
+    {
+      "id": "kapitel-05",
+      "title": "5. Urteilen – Die Brennnessel in der Natur",
+      "icon": "⚖️",
+      "tasksSrc": "./assets/data/chapters/kapitel-05.json",
+      "tasks": [
+        "5.1",
+        "5.2",
+        "5.3"
+      ]
+    }
+  ]
+}

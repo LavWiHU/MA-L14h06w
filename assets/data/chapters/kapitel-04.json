@@ -1,0 +1,128 @@
+{
+  "tasks": [
+    {
+      "id": "4.1",
+      "type": "multiple-choice",
+      "titleLabel": "Aufgabe:",
+      "title": "Vergleiche die Strukturen der <b>Brennessel</b> und der <b>Taubnessel</b>.",
+      "subtitle": "",
+      "promptLabel": "Aufgabe:",
+      "prompt": "Wähle die <u>zwei</u> richtigen Merkmale der Brennnessel und der Taubnessel aus.",
+      "promptIcon": "❗",
+      "options": [
+        {
+          "value": "e1",
+          "label": "Die <i>Taubnessel</i> hat dicke Brennhaare."
+        },
+        {
+          "value": "e2",
+          "label": "Die <i>Brennnessel</i> hat Brennhaare."
+        },
+        {
+          "value": "e3",
+          "label": "Die <i>Taubnessel</i> hat keine Brennhaare."
+        },
+        {
+          "value": "e4",
+          "label": "Die <i>Brennnessel</i> hat weiße Blüten."
+        }
+      ],
+      "solution": {
+        "values": [
+          "e2",
+          "e3"
+        ]
+      },
+      "media": {
+        "image": {
+          "src": "./assets/data/media/Phase4_Vergleich.png",
+          "alt": "Taubnessel / Brennnessel",
+          "caption": "",
+          "maxHeight": "550px",
+          "zoom": {
+            "enabled": true,
+            "factor": 5
+          },
+          "snapPoints": {
+            "enabled": true,
+            "editor": false,
+            "mode": "pairs",
+            "points": [
+              {
+                "id": "g1a",
+                "pairId": "g1",
+                "x": 82.43,
+                "y": 48.56,
+                "color": "#1e88e5"
+              },
+              {
+                "id": "g1b",
+                "pairId": "g1",
+                "x": 20.27,
+                "y": 16.19,
+                "color": "#1e88e5"
+              },
+              {
+                "id": "g2a",
+                "pairId": "g2",
+                "x": 27.35,
+                "y": 39.13,
+                "color": "#fb8c00"
+              },
+              {
+                "id": "g2b",
+                "pairId": "g2",
+                "x": 76.43,
+                "y": 60.04,
+                "color": "#fb8c00"
+              },
+              {
+                "id": "g3a",
+                "pairId": "g3",
+                "x": 19.5,
+                "y": 46.77,
+                "color": "#8e24aa"
+              },
+              {
+                "id": "g3b",
+                "pairId": "g3",
+                "x": 75.78,
+                "y": 28.95,
+                "color": "#8e24aa"
+              }
+            ]
+          }
+        }
+      },
+      "config": {
+        "helps": {
+          "hint1": "Betrachte die Blätter und den Stängel genau.",
+          "hint2": "Vergleiche die Haare der beiden Pflanzen.",
+          "solution": "Die Brennnessel hat Brennhaare, die Taubnessel nicht."
+        }
+      }
+    },
+    {
+      "id": "4.2",
+      "type": "text",
+      "titleLabel": "Aufgabe:",
+      "title": "Beschreibe, welche Merkmale bei beiden Pflanzen ähnlich sind.<br><i>(Antworte in Stichpunkten oder ganzen Sätzen.)</i></br>"
+    },
+    {
+      "id": "4.3",
+      "type": "picture",
+      "titleLabel": "Zusammenfassung:",
+      "requiresChapterCorrect": true,
+      "hideTaskId": true,
+      "title": "",
+      "media": {
+        "image": {
+          "src": "./assets/data/media/Figur_Phase4.png",
+          "alt": "Brennessel",
+          "caption": "",
+          "maxHeight": "450px"
+        }
+      }
+    }
+  ]
+}

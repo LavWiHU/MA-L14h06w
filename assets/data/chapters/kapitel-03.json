@@ -1,0 +1,104 @@
+{
+  "tasks": [
+    {
+      "id": "3.1",
+      "type": "image-labels",
+      "titleLabel": "Aufgabe:",
+      "title": "Starte das Video.",
+      "promptLabel": "Aufgabe:",
+      "prompt": "Ordne die Begriffe dem Brennhaar richtig zu.",
+      "promptIcon": "❗",
+      "media": {
+        "video": {
+          "src": "./assets/data/media/Phase3_Erklaervideo.mp4",
+          "alt": "Aufbau der Brennnessel"
+        }
+      },
+      "answerMedia": {
+        "image": {
+          "src": "assets/data/media/Phase3_Bild.png",
+          "poster": "",
+          "caption": "",
+          "maxHeight": "700px"
+        }
+      },
+      "config": {
+        "enableEditor": false,
+        "helps": {
+          "hint1": "Beobachte das Brennhaar im Video genau.",
+          "hint2": "Achte darauf, wann das Brennhaar abbricht.",
+          "solution": "Lösung:"
+        },
+        "helpMedia": {
+          "solution": {
+            "image": {
+              "src": "./assets/data/media/loesung3.png",
+              "alt": "Lösungsbild",
+              "maxHeight": "500px"
+            }
+          }
+        }
+      },
+      "callouts": [
+        { "id": "c1", "x": 64.09, "y": 4.05, "w": 22, "tx": 42.15, "ty": 5.3 },
+        { "id": "c2", "x": 62.37, "y": 15.14, "w": 24, "tx": 39.81, "ty": 8.88 },
+        { "id": "c3", "x": 59.83, "y": 45.07, "w": 24, "tx": 30.16, "ty": 47.13 },
+        { "id": "c4", "x": 59.62, "y": 54.33, "w": 24, "tx": 36.16, "ty": 56.39 },
+        { "id": "c5", "x": 59.42, "y": 89.3, "w": 22, "tx": 39.51, "ty": 92.16 }
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "label": "Flüssigkeit"
+        },
+        {
+          "id": "o2",
+          "label": "Stiel"
+        },
+        {
+          "id": "o3",
+          "label": "Köpfchen"
+        },
+        {
+          "id": "o4",
+          "label": "Fuß"
+        },
+        {
+          "id": "o5",
+          "label": "Bruchstelle"
+        }
+      ],
+      "solution": {
+        "answers": {
+          "c1": "o3",
+          "c2": "o5",
+          "c3": "o1",
+          "c4": "o2",
+          "c5": "o4"
+        }
+      }
+    },
+    {
+      "id": "3.2",
+      "type": "text",
+      "titleLabel": "Aufgabe:",
+      "title": "Beschreibe, was passiert, wenn das Köpfchen abbricht.<br><i>(Antworte in Stichpunkten oder ganzen Sätzen.)</i></br>"
+    },
+    {
+      "id": "3.3",
+      "type": "picture",
+      "titleLabel": "Zusammenfassung:",
+      "requiresChapterCorrect": true,
+      "hideTaskId": true,
+      "title": "",
+      "media": {
+        "image": {
+          "src": "./assets/data/media/Figur_Phase3.png",
+          "alt": "Brennessel",
+          "caption": "",
+          "maxHeight": "450px"
+        }
+      }
+    }
+  ]
+}

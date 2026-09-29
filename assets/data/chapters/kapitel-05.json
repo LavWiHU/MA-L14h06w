@@ -1,0 +1,161 @@
+{
+  "tasks": [
+    {
+      "id": "5.1",
+      "type": "cloze-select",
+      "titleLabel": "Aufgabe:",
+      "title": "Betrachte die Bilder.",
+      "promptLabel": "Aufgabe:",
+      "prompt": "Wähle die passenden Begriffe aus.",
+      "promptIcon": "❗",
+      "media": {
+        "image": {
+          "src": "./assets/data/media/Phase5.png",
+          "alt": "Brennessel",
+          "caption": ""
+        }
+      },
+      "config": {
+        "helps": {
+          "hint1": "Einige Raupen nutzen die Brennnessel als Nahrung.",
+          "hint2": "Menschen nutzen die Brennnessel auch in der Küche.",
+          "solution": "Die Brennnessel ist wichtig für Tiere (Nahrung) und Menschen (Heilmittel)."
+        }
+      },
+      "textParts": [
+        {
+          "type": "text",
+          "value": "Die Brennnessel kann auf der Haut ein "
+        },
+        {
+          "type": "gap",
+          "id": "g1",
+          "placeholder": "...",
+          "options": [
+            "glitzern",
+            "brennen",
+            "stinken"
+          ]
+        },
+        {
+          "type": "text",
+          "value": " und "
+        },
+        {
+          "type": "gap",
+          "id": "g2",
+          "placeholder": "...",
+          "options": [
+            "funkeln",
+            "lachen",
+            "jucken"
+          ]
+        },
+        {
+          "type": "text",
+          "value": " auslösen. <br>Trotzdem bietet die Pflanze für Menschen und Tiere "
+        },
+        {
+          "type": "gap",
+          "id": "g3",
+          "placeholder": "...",
+          "options": [
+            "Glückwünsche",
+            "Lichter",
+            "Vorteile"
+          ]
+        },
+        {
+          "type": "text",
+          "value": ". "
+        },
+        {
+          "type": "text",
+          "value": "<br>Wir Menschen nutzen die Brennnessel zum Beipsiel als Heilmittel für unsere Gesundheit oder zum  "
+        },
+        {
+          "type": "gap",
+          "id": "g4",
+          "placeholder": "...",
+          "options": [
+            "Kochen",
+            "Singen",
+            "Kuscheln"
+          ]
+        },
+        {
+          "type": "text",
+          "value": ". "
+        },
+        {
+          "type": "text",
+          "value": "<br>Einige Raupen nutzen die Brennnessel als "
+        },
+        {
+          "type": "gap",
+          "id": "g5",
+          "placeholder": "...",
+          "options": [
+            "Nahrung",
+            "Rutsche",
+            "Hüpfburg"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "."
+        },
+        {
+          "type": "text",
+          "value": "<br>Die Brennnessel ist deshalb ein wichtiger Teil der "
+        },
+        {
+          "type": "gap",
+          "id": "g6",
+          "placeholder": "...",
+          "options": [
+            "Sonne",
+            "Natur",
+            "Schule"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ],
+      "solution": {
+        "answers": {
+          "g1": "brennen",
+          "g2": "jucken",
+          "g3": "Vorteile",
+          "g4": "Kochen",
+          "g5": "Nahrung",
+          "g6": "Natur"
+        }
+      }
+    },
+    {
+      "id": "5.2",
+      "type": "text",
+      "titleLabel": "Aufgabe:",
+      "title": "Beschreibe, warum die Brennnessel für die Pflanzen und Tiere in der Natur wichtig ist.<br><i>(Antworte in Stichpunkten oder ganzen Sätzen.)</i></br>"
+    },
+    {
+      "id": "5.3",
+      "type": "picture",
+      "titleLabel": "Zusammenfassung:",
+      "requiresChapterCorrect": true,
+      "hideTaskId": true,
+      "title": "",
+      "media": {
+        "image": {
+          "src": "./assets/data/media/Figur_Phase5.png",
+          "alt": "Brennessel",
+          "caption": "",
+          "maxHeight": "450px"
+        }
+      }
+    }
+  ]
+}

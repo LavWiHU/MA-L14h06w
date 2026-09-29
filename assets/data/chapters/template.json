@@ -1,0 +1,307 @@
+{
+  "tasks": [
+    {
+      "id": "1.1",
+      "type": "text",
+      "titleLabel": "Aufgabe:",
+      "title": "Semantische Elemente",
+      "subtitle": "Struktur",
+      "promptLabel": "Frage:",
+      "prompt": "Warum sind semantische HTML Elemente wichtig?",
+      "media": {
+        "video": {
+          "src": "assets/data/media/Phase1_Video Einstieg.mp4",
+          "poster": "./assets/data/media/Phase 2.png",
+          "caption": "Du gehts spazieren und AUA"
+        }
+      },
+      "config": {
+        "helps": {
+          "hint1": "Barrierefreiheit und SEO."
+        }
+      }
+    },
+    {
+      "id": "1.2",
+      "type": "single-choice",
+      "titleLabel": "Aufgabe:",
+      "title": "Du in der Natur",
+      "subtitle": "Erkennen",
+      "promptLabel": "Frage:",
+      "prompt": "Was denkst Du, ist passiert",
+      "options": [
+        {
+          "value": "a",
+          "label": "Ein Insekt, das auf der Pflanze sitzt, hat die Frau gestochen."
+        },
+        {
+          "value": "b",
+          "label": "Die Frau hat die Dornen der Pflanze angefasst."
+        },
+        {
+          "value": "c",
+          "label": "Die Pflanze schützt sich vor Menschen und Tieren."
+        }
+      ],
+      "media": {
+        "video": {
+          "src": "assets/data/media/Phase1_Video Einstieg.mp4",
+          "poster": "",
+          "caption": "Du gehts spazieren und AUA"
+        }
+      },
+      "config": {
+        "helps": {
+          "hint1": "Achte genau auf die Pflanze, vielleicht hast Du sie schon einmal gesehen.",
+          "hint2": "Schau Dir das Bild mit dem Unterarm an. Welche Pflanze ist dabei zu sehen?",
+          "solution": "Die Pflanze, die das Jucken und Brennen verursacht, ist die Brennnessel."
+        }
+      }
+    },
+    {
+      "id": "1.4",
+      "type": "multiple-choice",
+      "titleLabel": "Aufgabe:",
+      "title": "Mehrere möglich",
+      "promptLabel": "Frage:",
+      "prompt": "Welche gehören zu HTML-Elementen?",
+      "options": [
+        {
+          "value": "main",
+          "label": "<main>"
+        },
+        {
+          "value": "div",
+          "label": "<div>"
+        },
+        {
+          "value": "while",
+          "label": "while"
+        }
+      ],
+      "media": {
+        "image": {
+          "src": "assets/data/media/beispiel.png",
+          "alt": "Beispielbild",
+          "zoom": {
+            "enabled": true,
+            "factor": 5
+          },
+          "snapPoints": {
+            "enabled": true,
+            "editor": true,
+            "mode": "single",
+            "points": [
+              {
+                "id": "p1",
+                "x": 22.4,
+                "y": 31.8,
+                "color": "#e53935"
+              },
+              {
+                "id": "p2",
+                "x": 48.1,
+                "y": 55.2,
+                "color": "#1e88e5"
+              }
+            ]
+          }
+        }
+      },
+      "media": {
+        "image": {
+          "src": "assets/data/media/beispiel.png",
+          "alt": "Beispielbild",
+          "zoom": {
+            "enabled": true,
+            "factor": 5
+          },
+          "snapPoints": {
+            "enabled": true,
+            "editor": true,
+            "mode": "pairs",
+            "points": [
+              {
+                "id": "p1a",
+                "pairId": "g1",
+                "x": 18.2,
+                "y": 24.9,
+                "color": "#e53935"
+              },
+              {
+                "id": "p1b",
+                "pairId": "g1",
+                "x": 67.7,
+                "y": 24.4,
+                "color": "#e53935"
+              },
+              {
+                "id": "p2a",
+                "pairId": "g2",
+                "x": 29.5,
+                "y": 62.0,
+                "color": "#43a047"
+              },
+              {
+                "id": "p2b",
+                "pairId": "g2",
+                "x": 74.1,
+                "y": 61.3,
+                "color": "#43a047"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "1.5",
+      "type": "match-lines",
+      "titleLabel": "Aufgabe:",
+      "title": "Ordne zu",
+      "promptLabel": "Frage:",
+      "prompt": "Verbinde Gemüse mit dem richtigen Begriff.",
+      "config": {
+        "rightUnique": true,
+        "leftUnique": true
+      },
+      "solution": {
+        "pairs": [
+          [
+            "l1",
+            "r2"
+          ],
+          [
+            "l2",
+            "r1"
+          ]
+        ]
+      },
+      "left": [
+        {
+          "id": "l1",
+          "img": "./assets/data/media/wirsing.jpg",
+          "alt": "Wirsing"
+        },
+        {
+          "id": "l2",
+          "img": "./assets/data/media/karotte.jpg",
+          "alt": "Karotte"
+        },
+        {
+          "id": "l3",
+          "img": "./assets/data/media/karotte.jpg",
+          "alt": "Zitrone"
+        }
+      ],
+      "right": [
+        {
+          "id": "r1",
+          "label": "Karotte ist ein tolles Gemüse aber das weiß nicht jeder, dass es die Sehkraft optimiert"
+        },
+        {
+          "id": "r2",
+          "label": "Wirsing"
+        },
+        {
+          "id": "r3",
+          "label": "Zitrone"
+        }
+      ]
+    },
+    {
+      "id": "1.6",
+      "type": "image-labels",
+      "titleLabel": "Aufgabe:",
+      "title": "Beschrifte das Bild",
+      "promptLabel": "Frage:",
+      "prompt": "Wähle die passenden Begriffe für die Markierungen.",
+      "media": {
+        "image": {
+          "src": "./assets/data/media/Brennnessel.jpg",
+          "alt": "Pflanze"
+        }
+      },
+      "config": {
+        "enableEditor": true
+      },
+      "callouts": [
+        {
+          "id": "c1",
+          "x": 72,
+          "y": 18,
+          "w": 22,
+          "tx": 55,
+          "ty": 22,
+          "placeholder": "..."
+        },
+        {
+          "id": "c2",
+          "x": 10,
+          "y": 55,
+          "w": 24,
+          "tx": 38,
+          "ty": 58,
+          "placeholder": "..."
+        },
+        {
+          "id": "c3",
+          "x": 72,
+          "y": 78,
+          "w": 22,
+          "tx": 52,
+          "ty": 80,
+          "placeholder": "..."
+        }
+      ],
+      "options": [
+        "Blatt",
+        "Ast",
+        "Wurzel",
+        "Rinde"
+      ]
+    },
+    {
+      "id": "1.7",
+      "type": "cloze-select",
+      "title": "Lückentext",
+      "prompt": "Wähle die passenden Begriffe aus.",
+      "textParts": [
+        {
+          "type": "text",
+          "value": "Die Brennnessel schützt sich mit "
+        },
+        {
+          "type": "gap",
+          "id": "g1",
+          "placeholder": "Auswählen",
+          "options": [
+            "Dornen",
+            "Brennhaaren",
+            "Blüten"
+          ],
+          "correct": "Brennhaaren"
+        },
+        {
+          "type": "text",
+          "value": ". Diese können bei Berührung "
+        },
+        {
+          "type": "gap",
+          "id": "g2",
+          "placeholder": "Auswählen",
+          "options": [
+            "Wasser",
+            "Giftstoffe",
+            "Luft"
+          ],
+          "correct": "Giftstoffe"
+        },
+        {
+          "type": "text",
+          "value": " abgeben."
+        }
+      ]
+    }
+  ]
+}

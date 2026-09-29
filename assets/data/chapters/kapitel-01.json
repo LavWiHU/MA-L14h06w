@@ -1,0 +1,70 @@
+{
+  "tasks": [
+    {
+      "id": "1.1",
+      "type": "single-choice",
+      "titleLabel": "Aufgabe:",
+      "title": "Starte das Video.",
+      "promptLabel": "Aufgabe:",
+      "prompt": "Wähle aus, was passiert ist.",
+      "promptIcon": "❗",
+      "options": [
+        {
+          "value": "a",
+          "label": "Ein Insekt hat die Frau gestochen."
+        },
+        {
+          "value": "b",
+          "label": "Eine Ast hat die Frau gekratzt."
+        },
+        {
+          "value": "c",
+          "label": "Eine Pflanze hat die Frau berührt."
+        },
+        {
+          "value": "d",
+          "label": "Ein Dorn hat die Frau gestochen."
+        }
+      ],
+      "solution": {
+        "value": "c"
+      },
+      "media": {
+        "video": {
+          "src": "assets/data/media/Phase1_Video Einstieg.mp4",
+          "poster": "",
+          "caption": ""
+        }
+      },
+      "config": {
+        "helps": {
+          "hint1": "Betrachte den Unterarm im Video.",
+          "hint2": "Achte darauf, was den Arm berührt.",
+          "solution": "Eine Pflanze berührt den Arm."
+        }
+      }
+    },
+    {
+      "id": "1.2",
+      "type": "text",
+      "titleLabel": "Aufgabe:",
+      "title": "Beschreibe, warum die Haut nach der Berührung brennt.<br><i>(Antworte in Stichpunkten oder ganzen Sätzen.)</i></br>"
+    },
+    {
+      "id": "1.3",
+      "type": "picture",
+      "titleLabel": "Zusammenfassung:",
+      "title": "",
+      "requiresChapterCorrect": true,
+      "hideTaskId": true,
+      "media": {
+        "image": {
+          "src": "./assets/data/media/Figur_Phase1.png",
+          "alt": "Brennessel",
+          "caption": "",
+          "maxHeight": "450px"
+        }
+      }
+    }
+  ]
+}

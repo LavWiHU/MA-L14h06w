@@ -1,0 +1,103 @@
+{
+  "tasks": [
+    {
+      "id": "2.1",
+      "type": "multiple-choice",
+      "titleLabel": "Aufgabe:",
+      "title": "Untersuche die Brennessel mit der Lupe.",
+      "promptLabel": "Aufgabe:",
+      "prompt": "Wähle die <u>zwei</u> richtigen Merkmale der Brennnessel aus.",
+      "promptIcon": "❗",
+      "media": {
+        "image": {
+          "src": "./assets/data/media/Phase 2.png",
+          "alt": "Brennessel",
+          "caption": "",
+          "maxHeight": "700px",
+          "zoom": {
+            "enabled": true,
+            "factor": 5
+          },
+          "snapPoints": {
+            "enabled": true,
+            "editor": false,
+            "mode": "single",
+            "points": [
+              {
+                "id": "p1",
+                "x": 56.1,
+                "y": 22.98,
+                "color": "#1e88e5"
+              },
+              {
+                "id": "p2",
+                "x": 52.8,
+                "y": 61.84,
+                "color": "#43a047"
+              },
+              {
+                "id": "p3",
+                "x": 64.99,
+                "y": 48.69,
+                "color": "#fb8c00"
+              }
+            ]
+          }
+        }
+      },
+      "options": [
+        {
+          "value": "e1",
+          "label": "Die Brennnessel hat große, blaue Flecken."
+        },
+        {
+          "value": "e2",
+          "label": "Die Brennnessel hat kurze, spitze Haare."
+        },
+        {
+          "value": "e3",
+          "label": "Die Brennnessel hat kleine, weiße Blüten."
+        },
+        {
+          "value": "e4",
+          "label": "Die Brennnessel hat grüne, gezackte Blätter."
+        }
+      ],
+      "solution": {
+        "values": [
+          "e2",
+          "e4"
+        ]
+      },
+      "config": {
+        "helps": {
+          "hint1": "Untersuche den Stängel und die Blätter.",
+          "hint2": "Suche nach den Haaren.",
+          "solution": "Die Brennnessel hat gezackte Blätter und kurze, spitze Haare."
+        }
+      }
+    },
+    {
+      "id": "2.2",
+      "type": "text",
+      "titleLabel": "Aufgabe:",
+      "title": "Beschreibe, was du mit der Lupe besser sehen konntest.<br><i>(Antworte in Stichpunkten oder ganzen Sätzen.)</i></br>"
+    },
+    {
+      "id": "2.3",
+      "type": "picture",
+      "titleLabel": "Zusammenfassung:",
+      "requiresChapterCorrect": true,
+      "hideTaskId": true,
+      "title": "",
+      "media": {
+        "image": {
+          "src": "./assets/data/media/Figur_Phase2.png",
+          "alt": "Brennessel",
+          "caption": "",
+          "maxHeight": "450px"
+        }
+      }
+    }
+  ]
+}
