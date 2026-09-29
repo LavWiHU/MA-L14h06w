@@ -1,0 +1,127 @@
+.helps {
+    margin-top: 10px;
+}
+
+.help {
+    max-width: 80%;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px dashed #eee;
+}
+
+.help summary {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    transform-origin: left center;
+    transition: background-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+.help summary:hover {
+    background: rgba(21, 94, 239, 0.08);
+    transform: scale(1.03);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.help summary::before {
+    content: attr(data-icon);
+    font-size: 1.1rem;
+    transition: transform 160ms ease;
+}
+
+.help summary:hover::before {
+    transform: scale(1.2);
+}
+
+.help[open] summary {
+    background: rgba(21, 94, 239, 0.12);
+    font-weight: 600;
+}
+
+.help__media {
+    margin: 0.75rem 0 0;
+}
+
+.help__media img {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+}
+
+.help.is-attention summary {
+    background: rgba(21, 94, 239, 0.18);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+}
+
+.help.is-attention-bounce summary {
+    animation: help-bounce 0.6s ease-in-out infinite alternate;
+    will-change: transform;
+}
+
+.help.is-attention-bounce summary:hover {
+    animation: help-bounce 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes help-bounce {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+.task-help-dialog {
+    width: min(32rem, calc(100vw - 2rem));
+    max-width: 32rem;
+    padding: 0;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.task-help-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.task-help-dialog__content {
+    padding: 1.25rem;
+}
+
+.task-help-dialog__title {
+    margin: 0 0 0.75rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.task-help-dialog__text {
+    margin: 0 0 1.25rem;
+    line-height: 1.5;
+}
+
+.task-help-dialog__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+}
+
+.task-help-dialog__button {
+    padding: 0.55rem 0.9rem;
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+    background: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+
+.task-help-dialog__button--primary {
+    background: #1f6feb;
+    color: #fff;
+    border-color: #1f6feb;
+}
+

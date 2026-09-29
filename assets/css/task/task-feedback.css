@@ -1,0 +1,21 @@
+.is-correct {
+    border-color: #1a7f37 !important;
+    background: #dafcdd !important;
+}
+
+.is-incorrect {
+    border-color: #b42318 !important;
+    background: #fcddda !important;
+}
+
+.is-correct-text {
+    color: #1a7f37 !important;
+}
+
+.is-incorrect-text {
+    color: #b42318 !important;
+}
+.task--error {
+    border-color: #f3bcbc;
+    background: #fff6f6;
+}

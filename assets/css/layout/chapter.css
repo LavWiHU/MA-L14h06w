@@ -1,0 +1,23 @@
+details.chapter > summary .chapter-title::before {
+    content: attr(data-icon);
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.chapter {
+    margin: 12px 0;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.chapter > summary {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.chapter-title::before {
+    content: attr(data-icon);
+    display: inline-block;
+    margin-right: 8px;
+}

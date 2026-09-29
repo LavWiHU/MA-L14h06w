@@ -1,0 +1,79 @@
+.match-lines {
+    position: relative;
+    display: grid;
+    grid-template-columns:
+        minmax(260px, max-content)
+        minmax(80px, 1fr)
+        minmax(180px, max-content);
+    gap: 12px;
+    align-items: start;
+}
+
+.ml-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ml-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+    text-align: left;
+}
+
+.ml-item.is-selected {
+    outline: 2px solid #999;
+}
+
+.ml-left .ml-item {
+    padding: 10px;
+}
+
+.ml-right .ml-item {
+    padding: 8px 12px;
+    align-self: center;
+}
+
+.ml-img {
+    width: 126px;
+    height: 126px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex: 0 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.ml-stage {
+    position: relative;
+}
+
+.ml-svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.ml-svg path {
+    stroke: currentColor;
+    stroke-width: 2;
+    opacity: 0.8;
+    pointer-events: stroke;
+    cursor: pointer;
+    transition: stroke-width 120ms ease, opacity 120ms ease;
+}
+
+.ml-svg path:hover {
+    stroke-width: 4;
+    opacity: 1;
+}

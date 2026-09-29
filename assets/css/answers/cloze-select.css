@@ -1,0 +1,35 @@
+.cloze-select__text {
+    max-width: 80%;
+    line-height: 2.1;
+    margin: 0;
+}
+
+.cloze-select__gap {
+    display: inline-block;
+    vertical-align: baseline;
+
+    margin: 0 0.25rem;
+    padding: 0.15rem 1.75rem 0.15rem 0.5rem;
+
+    min-width: 55px;
+    max-width: 280px;
+
+    font: inherit;
+    line-height: 1.2;
+
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    background: white;
+    box-sizing: border-box;
+}
+
+.cloze-select__media {
+    margin: 0.5rem 0 0.75rem 0;
+}
+
+.cloze-select__media img {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}

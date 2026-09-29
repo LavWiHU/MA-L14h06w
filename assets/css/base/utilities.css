@@ -1,0 +1,15 @@
+.muted {
+    color: #666;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+.icon{
+    display: inline-block;
+    line-height: 1;
+    font-size: 1.1rem;
+}
+
+[hidden] {
+    display: none;
+}

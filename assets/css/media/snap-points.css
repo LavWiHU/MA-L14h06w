@@ -1,0 +1,77 @@
+.task-media__snap-layer {
+    position: absolute;
+    inset: 0;
+    z-index: 22;
+    pointer-events: none;
+}
+
+.task-media__snap-layer.is-edit-mode {
+    pointer-events: auto;
+    cursor: crosshair;
+}
+
+.task-media__snap-point {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 999px;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    background: #e53935;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.18);
+    pointer-events: none;
+}
+
+.task-media__snap-point.is-snapped {
+    transform: translate(-50%, -50%) scale(1.25);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.24);
+}
+
+.task__snap-toggle-button {
+    display: inline-block;
+    margin: 0.35rem 0;
+    padding: 0.55rem 0.9rem;
+    border: 1px solid #1f6feb;
+    border-radius: 8px;
+    background: #1f6feb;
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.task__snap-toggle-button:hover {
+    background: #1558c0;
+}
+
+.task-media__editor-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.task-media__editor-button,
+.task-media__editor-select {
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #1f6feb;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.task-media__editor-button {
+    background: #1f6feb;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.task-media__editor-button:hover {
+    background: #1558c0;
+}
+
+.task-media__editor-select {
+    background: #fff;
+    color: #111;
+}

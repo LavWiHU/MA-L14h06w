@@ -1,0 +1,66 @@
+.task-media__zoom-toggle {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 30;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: none;
+    border-radius: 999px;
+    background: #155eef;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+    transition: background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+    transform-origin: center;
+}
+
+.task-media__zoom-toggle:hover,
+.task-media__zoom-toggle.is-attention-bounce {
+    background: #5bbcff;
+    animation: zoom-toggle-bounce 0.9s ease-in-out infinite alternate;
+}
+
+.task-media__zoom-toggle:focus-visible {
+    outline: 3px solid rgba(91, 188, 255, 0.38);
+    outline-offset: 2px;
+}
+
+.task-media__zoom-toggle.is-active {
+    background: #1a7f37;
+    transform: scale(1.08);
+    box-shadow: 0 0 0 3px rgba(17, 85, 37, 0.25);
+}
+
+.task-media__zoom-lens {
+    position: absolute;
+    z-index: 25;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.12);
+    --lens-outline-color: #000000;
+    outline: 7px solid var(--lens-outline-color);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+}
+
+.task-media__zoom-lens[hidden] {
+    display: none;
+}
+
+@keyframes zoom-toggle-bounce {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.75);
+    }
+}

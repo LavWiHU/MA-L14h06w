@@ -1,0 +1,92 @@
+.ic-layer {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.ic-svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.ic-input {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    pointer-events: auto;
+}
+
+.ic-input select {
+    min-width: 140px;
+    max-width: 260px;
+    padding: 6px 8px;
+    box-sizing: border-box;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    background: #fff;
+    color: #000;
+}
+
+.ic-input select option {
+    color: #000;
+}
+
+.ic-input select option:disabled {
+    background: #bfc5cd;
+}
+
+.ic-target {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.35);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 10;
+}
+
+.ic-edit-mode .ic-input {
+    outline: 1px dashed #888;
+}
+.ic-edit-mode .ic-target {
+    background: rgba(255, 0, 0, 0.55);
+    pointer-events: auto;
+}
+
+.ic-feedback {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 8px;
+    font-size: 0.9rem;
+}
+
+.ic-feedback__icon {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.ic-feedback__icon.is-correct {
+    color: #1a7f37;
+    background: white !important;
+}
+
+.ic-feedback__icon.is-wrong {
+    color: #b42318;
+    background: white !important;
+}
+
+.ic-feedback__solution {
+    padding: 2px 6px;
+    border-radius: 6px;
+    background: #e5e7eb;
+    color: #444;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}

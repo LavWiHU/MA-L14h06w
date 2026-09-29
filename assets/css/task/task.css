@@ -1,0 +1,61 @@
+.task {
+    grid-template-columns: max-content 1fr;
+    display: grid;
+    column-gap: 12px;
+    padding: 12px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+}
+.task[hidden] {
+    display: none !important;
+}
+.task__id {
+    align-self: start;
+    font-weight: 800;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+.task__content {
+    min-width: 0;
+}
+
+.task__titleline,
+.task__subtitle {
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+.task__titleline strong,
+.task__subtitle strong,
+.task__promptline strong {
+    margin-right: 4px;
+}
+
+.task__prompt {
+    margin: 0.5rem 0;
+}
+
+.task__promptline {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.task__promptlead {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.task__prompt-icon {
+    display: inline-block;
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+.task__prompttext {
+    margin-top: 0.25rem;
+}

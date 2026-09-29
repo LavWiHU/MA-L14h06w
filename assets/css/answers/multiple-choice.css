@@ -1,0 +1,20 @@
+[data-options] {
+    max-width: 80%;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin: 10px 0;
+    background: #fafafa;
+}
+
+.mc-option input{
+    accent-color: #000;
+}
+
+.mc-option.is-correct input{
+    accent-color: #1a7f37;
+}
+
+.mc-option.is-incorrect input{
+    accent-color: #b42318;
+}

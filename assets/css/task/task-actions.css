@@ -1,0 +1,77 @@
+.task__actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.task__check-button,
+.task__unlock-button,
+.task-unlock-dialog__ok{
+    padding: 0.6rem 1rem;
+    border: 1px solid #1f6feb;
+    border-radius: 8px;
+    background: #1f6feb;
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.task__check-button:hover,
+.task__unlock-button:hover,
+.task-unlock-dialog__ok{
+    background: #1558c0;
+    transform: translateY(-1px);
+}
+
+.task__check-button:disabled {
+    background: #c9c9c9;
+    border-color: #c9c9c9;
+    color: #666;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.task__unlock-button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    filter: grayscale(1);
+}
+
+.task__check-button:disabled:hover,
+.task__unlock-button:disabled{
+    transform: none;
+}
+
+.task__check-feedback {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.task__check-feedback.is-correct {
+    color: #1a7f37;
+}
+
+.task__check-feedback.is-incorrect {
+    color: #b42318;
+}
+.task__unlock-button {
+    display: block;
+    margin: 2rem auto;
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+.task__unlock-button[aria-disabled="true"] {
+    opacity: 0.45;
+    cursor: not-allowed;
+    filter: grayscale(1);
+}
+
+.task__unlock-button[aria-disabled="true"]:hover,
+.task__unlock-button[aria-disabled="true"]:focus {
+    transform: none;
+    box-shadow: none;
+}

@@ -1,0 +1,36 @@
+:root {
+    /* Schriftfamilie */
+    --font-base: "Andika", system-ui, sans-serif;
+
+    /* Schriftgrößen */
+    --font-size-base: 17px;
+    --font-size-sm: 14px;
+    --font-size-lg: 18px;
+    --font-size-xl: 24px;
+
+    /* Zeilenhöhe */
+    --line-height-base: 1.6;
+    --line-height-heading: 1.25;
+}
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+body {
+    font-family: var(--font-base);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: #111;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+p {
+    margin: 0.5rem 0;
+}
